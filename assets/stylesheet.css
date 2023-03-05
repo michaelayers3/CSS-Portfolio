@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:red;
+    color:aqua;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: right ;
+    padding-top: 15px;
+    margin-right: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+
+aside {
+position:fixed;
+ float: left;
+ /* flex-basis: 100%; */
+ background-color:#76e705;
+ /* border: 50px;
+ border-color: black; */
+ padding:20px;
+justify-content: space-between;
+ width: 20%;
+ height:100%;
+}
+
+.aside-item {
+    text-align: center;
+    line-height: 250px;
+    font-size: 48px;
+
+}
+
+main {
+position: fixed;
+margin-left: 20%;
+}
+
+.about-me {
+
+}
+
+.work{
+
+}
+.card {
+
+}
+
+.contact{
+    
+    
+} 
