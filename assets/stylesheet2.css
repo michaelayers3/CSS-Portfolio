@@ -47,7 +47,7 @@
   
   
   
-  about {
+  .about {
    display: flex;
    /* flex-direction: row; */
    /* flex-wrap: wrap ; */
@@ -59,21 +59,23 @@
         margin-bottom:1%;
         border-bottom: 10px solid black;
     }
-    about p {
+    .about p {
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.5;
         order:1;
         float: left;
         background-color: aliceblue;
           text-align: left;
          flex: 1; 
     } 
-    about img{
+    .about img{
         order: 2;
         float: right;
         flex: 0 0 100px;
         scale: 60%; 
     }
 
-    about h2 {
+    .about h2 {
         order:0;
         background-color: aliceblue;
        /* font-size: 50px; */
@@ -85,10 +87,9 @@
     }
    
     @media screen and (max-width: 900px) {
-        about {
+        .about {
            flex-direction: column; 
         }
-        
     }
       
    
@@ -125,7 +126,7 @@
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 10px;
     /* padding: 1%; */
-    max-height: 400px;
+    /* max-height: 400px; */
   }
   .Horiseon p {
     display: none;
