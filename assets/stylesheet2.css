@@ -5,6 +5,7 @@
   body {
     font-family: Arial;
     margin: 0;
+    background-color: aliceblue;
   }
   
   header {
@@ -13,7 +14,7 @@
       justify-content: space-between;
       padding: 20px;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color:darkblue;
+      background-color:lightblue;
       color:black;
   }
   
@@ -23,6 +24,7 @@
   }
   
    nav {
+  
       display: flex;
       flex-wrap: wrap;
       align-self: right ;
@@ -33,6 +35,7 @@
   
   
   nav ul li {
+      color:white;
       display: inline-block;
       margin-left: 25px;
   }
@@ -57,7 +60,7 @@
       height: auto;
         width: auto;
         margin-bottom:1%;
-        border-bottom: 10px solid black;
+        /* border-bottom: 5px solid black; */
     }
     .about p {
         font-family: 'Courier New', Courier, monospace;
@@ -66,23 +69,26 @@
         float: left;
         background-color: aliceblue;
           text-align: left;
+          margin-left: 15px;
+          margin-top: 150px;
          flex: 1; 
     } 
     .about img{
         order: 2;
         float: right;
-        flex: 0 0 100px;
+        flex: .25 0 100px;
         scale: 60%; 
+        /* height: 100%; */
     }
 
     .about h2 {
         order:0;
         background-color: aliceblue;
-       /* font-size: 50px; */
+       font-size: 48px;
          float: left;
         flex: 0;
       padding: 10%;
-      border-right: 10px solid black ;
+      border-right:5px solid black ;
 
     }
    
@@ -95,8 +101,9 @@
    
   
       
-  work{
+  .work{
      display: flex;
+     flex: 0 0 200px;
      row-gap: 10px;
      /* justify-content: center; */
     /* flex-direction: row; */
@@ -105,22 +112,24 @@
       height: auto;
         width: auto;
         margin-bottom:1%;
-        border-bottom: 10px solid black;
+        /* border-bottom: 5px solid black; */
   }
   
-  work h2 {
+  .work h2 {
+    margin-left: 15px;
     order:0;
     background-color: aliceblue;
-    font-size: larger;
+    font-size: 48px;
+    text-align: center;
     float: left;
     flex: 1 0 200px;
    padding: 10%;
-   border-right: 10px solid black ;
+   border-right: 5px solid black ;
   }
-  work .Horiseon {
+  .work .Horiseon {
     order:1;
     display: flex;
-    flex: 2 0 400px;
+    flex: 1 0 400px;
     border-style: solid;
     border-width: 1px;
     box-shadow: 10px 10px 5px #aaaaaa;
@@ -140,8 +149,9 @@
 .Horiseon:hover{
   box-shadow: 0 0 10px #000 inset;
 }
-  work .card{
+  .work .card{
     order:2;
+    max-height: 300px;
     flex: 1 0 200px;
     border-style: solid;
     border-width: 1px;
@@ -150,11 +160,11 @@
     /* padding: 1%; */
   }
 
-  work .card p {
+  .work .card p {
     display:none;
   }
 
-  work .card img{
+  .work .card img{
    height: 100%;
    width: 100%;
     object-fit:fill;
@@ -165,34 +175,38 @@
 
 
   @media screen and (max-width: 900px) {
-    work {
+    .work {
        flex-direction: column; 
     }
     
 }
 
-  contact {
-    /* display: flex; */
+  .contact {
+    display: flex;
+    flex-direction: row;
     background-color: aliceblue;
-    padding: 1%;
+    /* padding: 1%; */
       height: auto;
         width: auto;
         margin-bottom:1%;
     
   }
 
-  contact h2 {
+  .contact h2 {
+    order:0;
     background-color: aliceblue;
-    font-size: larger;
+    font-size: 48px;
     float: left;
-    flex: 1 0 200px;
-   padding: 10%;
-   border-right: 10px solid black ;
+    text-align: center;
+    flex: .5 0 100px;
+   /* padding: 10%; */
+   border-right: 5px solid black ;
   }
 
-  contact .box {
+  .contact .box {
+    order:2;
     display:flex;
-    row-gap: 1000% 10%;
+    /* row-gap: 1% 10%; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -200,7 +214,7 @@
 
   }
 
-contact ul li {
+.contact ul li {
     display: inline-block;
       margin-left: 25px;
       flex: 1 0 200px;
