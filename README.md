@@ -7,7 +7,7 @@ This repo contains a (very basic, work in progress) portfolio that I created fro
 ![screenshot](/assets/photos/finalss.png)
 
 Here is the link to the page:
-https://michaelayers3.github.io//
+https://michaelayers3.github.io/Michael-Ayers-Portfolio/
 
 ## Installation
 
