@@ -47,21 +47,15 @@
     justify-content: space-evenly;
   }
   
-  
-  
-  
   .about {
    display: flex;
-   /* flex-direction: row; */
-   /* flex-wrap: wrap ; */
-   /* justify-content: space-around; */
    background-color: aliceblue;
     padding: 1%;
       height: auto;
         width: auto;
         margin-bottom:1%;
-        /* border-bottom: 5px solid black; */
     }
+
     .about p {
         font-family: 'Courier New', Courier, monospace;
         line-height: 1.5;
@@ -78,7 +72,6 @@
         float: right;
         flex: .25 0 100px;
         scale: 60%; 
-        /* height: 100%; */
     }
 
     .about h2 {
@@ -98,21 +91,15 @@
         }
     }
       
-   
-  
-      
   .work{
      display: flex;
      flex: 0 0 200px;
      row-gap: 10px;
-     /* justify-content: center; */
-    /* flex-direction: row; */
     background-color: aliceblue;
     padding: 1%;
       height: auto;
         width: auto;
         margin-bottom:1%;
-        /* border-bottom: 5px solid black; */
   }
   
   .work h2 {
@@ -134,8 +121,6 @@
     border-width: 1px;
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 10px;
-    /* padding: 1%; */
-    /* max-height: 400px; */
   }
   .Horiseon p {
     display: none;
@@ -157,7 +142,6 @@
     border-width: 1px;
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 10px;
-    /* padding: 1%; */
   }
 
   .work .card p {
@@ -185,7 +169,6 @@
     display: flex;
     flex-direction: row;
     background-color: aliceblue;
-    /* padding: 1%; */
       height: auto;
         width: auto;
         margin-bottom:1%;
@@ -199,20 +182,16 @@
     float: left;
     text-align: center;
     flex: .5 0 100px;
-   /* padding: 10%; */
    border-right: 5px solid black ;
   }
 
   .contact .box {
     order:2;
     display:flex;
-    /* row-gap: 1% 10%; */
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-
-  }
+    }
 
 .contact ul li {
     display: inline-block;
@@ -221,17 +200,13 @@
     border-style: solid;
     border-width: 1px;
     box-shadow: 10px 10px 5px #aaaaaa;
-    /* margin: 10px; */
-    /* padding: 1%; */
 }
 
 button {
   width: 250px;
-  /* margin: 0 .5%; */
   font-size: 200%;
   color: #13293d;
   background-color: #fff;
-  /* border: 3px solid #13293d; */
 }
 
 button:hover {
@@ -248,85 +223,3 @@ button:focus {
   outline: none;
   border-color: #8ac4ff;
 }
-
-
-
-
-/*   
-  .work .first-card{
-      flex: 2 1 200px;
-      border-style: solid;
-      border-width: 1px;
-      box-shadow: 10px 10px 5px #aaaaaa;
-      margin: 10px;
-  }
-  
-   .horiseon img 
-      height: 100%;
-      width: 100%;
-      object-fit:contain;
-  }
-  .card{
-      flex: 1 0 200px;
-      border-style: solid;
-      border-width: 1px;
-      box-shadow: 10px 10px 5px #aaaaaa;
-      margin: 10px;
-  
-  }
-  
-  
-  
-  .contact {
-      background-color: aqua;
-      display: flex;
-      flex-wrap: wrap;
-      height: auto;
-      margin: 2% 2%;
-  } 
-  .contact ul li{
-      display: inline; */
-      
-  }
-  
-  /* article {
-    flex: 70%;
-    background-color: #fff;
-    padding: 20px;
-    border-bottom;
-  } */
-  
-  
-  
-  
-  /* Image Placeholders */
-  /* .sample-img {
-    background-color: #fff;
-    width: 100%;
-    padding: 20px;
-    height: 200px;
-    border: 1px solid black; */
-  }
-  
-  
-  /* Tablets - header changes color
-  @media screen and (max-width: 992px) {
-    header {
-      background: #772014;
-    }
-  }
-  
-  Large smartphones - navbar changes color
-  @media screen and (max-width: 768px) {
-    nav {
-      background-color: #bb8588;
-    }
-  }
-  
-  Small smartphones - image placeholders change color
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-  } */
-  
