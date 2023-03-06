@@ -13,8 +13,8 @@ header {
     justify-content: space-between;
     padding: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:red;
-    color:aqua;
+    background-color:darkblue;
+    color:black;
 }
 
 header h1 {
@@ -59,6 +59,7 @@ aside {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 
@@ -66,59 +67,60 @@ main {
 
 .about-me {
     height: auto;
-      width: 80%;
+      width: auto;
       margin: 2% 2%;
       border-bottom: 10px solid black;
     
     }
 .about-me-img {
+    float: right;
     border-style: solid;
     border-width: 1px;
-    border-radius: var(--border-radius);
+    border-radius:
     padding: 10px;
     flex: 0 0 300px;
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
+    scale: 60%;
 }
 
     
 .work{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    height: auto;
-    width: 80%;
-    margin: 2% 2%;
+    flex-direction: column;
+    margin:0 20%;
     border-bottom: 10px solid black;
 }
 
-.first-card{
+
+.work .first-card{
+    flex: 2 1 200px;
     border-style: solid;
     border-width: 1px;
-    border-radius: var(--border-radius);
-    padding: 10px;
-    flex: 2 0 3px;
     box-shadow: 10px 10px 5px #aaaaaa;
-    margin: 20px;
+    margin: 10px;
 }
 
-.first-card > img {
-scale: 50%;
+.first-card img {
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
 }
 .card{
+    flex: 1 0 200px;
     border-style: solid;
     border-width: 1px;
-    border-radius: var(--border-radius);
-    /* padding: 10px; */
-    flex:;
-
     box-shadow: 10px 10px 5px #aaaaaa;
-    margin: 20px;
+    margin: 10px;
+
 }
 
-.card > img{
- height: 50px;
- width: 50px;
- position: relative;
+.card img{
+    min-height: 100%;
+    min-width: 100%;
+    object-fit:contain;
 }
 
 .contact {
@@ -126,7 +128,6 @@ scale: 50%;
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    width: 80%;
     margin: 2% 2%;
 } 
 .contact ul li{
@@ -145,12 +146,12 @@ scale: 50%;
 
 
 /* Image Placeholders */
-.sample-img {
+/* .sample-img {
   background-color: #fff;
   width: 100%;
   padding: 20px;
   height: 200px;
-  border: 1px solid black;
+  border: 1px solid black; */
 }
 
 
