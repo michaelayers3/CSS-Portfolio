@@ -1,12 +1,13 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #d9dcd6;
+  font-family: Arial;
+  margin: 0;
 }
 
-header{
+header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -21,8 +22,7 @@ header h1 {
     font-size: 48px;
 }
 
-
-header nav ul{
+ nav {
     display: flex;
     flex-wrap: wrap;
     align-self: right ;
@@ -32,51 +32,145 @@ header nav ul{
 }
 
 
-
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-
-
 aside {
-position:fixed;
- float: left;
- /* flex-basis: 100%; */
- background-color:#76e705;
- /* border: 50px;
- border-color: black; */
- padding:20px;
-justify-content: space-between;
- width: 20%;
- height:100%;
-}
-
-.aside-item {
-    text-align: center;
-    line-height: 250px;
-    font-size: 48px;
-
-}
+    float: left;
+      flex: 30%;
+      justify-content: space-between;
+      background-color: #8bca58;
+      padding: 20px;
+      flex-wrap: wrap;
+      width: 20%;
+      height:100%;
+     
+    }
+    
+    aside h2 {
+        text-align: center;
+        line-height: 250px;
+        font-size: 48px;
+    
+    }
 
 main {
-position: fixed;
-margin-left: 20%;
+  display: flex;
+  flex-direction: column;
 }
+
+
+
 
 .about-me {
-
+    height: auto;
+      width: 80%;
+      margin: 2% 2%;
+      border-bottom: 10px solid black;
+    
+    }
+.about-me-img {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
 }
 
+    
 .work{
-
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 80%;
+    margin: 2% 2%;
+    border-bottom: 10px solid black;
 }
-.card {
 
+.first-card{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    flex: 2 0 3px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
 }
 
-.contact{
-    
-    
+.first-card > img {
+scale: 50%;
+}
+.card{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--border-radius);
+    /* padding: 10px; */
+    flex:;
+
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+}
+
+.card > img{
+ height: 50px;
+ width: 50px;
+ position: relative;
+}
+
+.contact {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 80%;
+    margin: 2% 2%;
 } 
+.contact ul li{
+    display: inline;
+    
+}
+
+/* article {
+  flex: 70%;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom;
+} */
+
+
+
+
+/* Image Placeholders */
+.sample-img {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+
+/* Tablets - header changes color
+@media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+  }
+}
+
+Large smartphones - navbar changes color
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+}
+
+Small smartphones - image placeholders change color
+@media screen and (max-width: 576px) {
+  .sample-img {
+    background-color: #8ac4ff;
+  }
+} */
